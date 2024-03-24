@@ -69,6 +69,16 @@ class S {
       args: [],
     );
   }
+
+  /// `You received a bonus of {bonus} points`
+  String youReceivedABonusOfNPoints(Object bonus) {
+    return Intl.message(
+      'You received a bonus of $bonus points',
+      name: 'youReceivedABonusOfNPoints',
+      desc: '',
+      args: [bonus],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

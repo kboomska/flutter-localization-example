@@ -1,4 +1,5 @@
 {
     "helloWorld": "Привет Мир!",
-    "goodbye": "Пока!"
+    "goodbye": "Пока!",
+    "youReceivedABonusOfNPoints": "Вы получили бонус {bonus} баллов"
 }

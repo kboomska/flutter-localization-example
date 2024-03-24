@@ -20,9 +20,12 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ru';
 
+  static String m0(bonus) => "Вы получили бонус ${bonus} баллов";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "goodbye": MessageLookupByLibrary.simpleMessage("Пока!"),
-        "helloWorld": MessageLookupByLibrary.simpleMessage("Привет Мир!")
+        "helloWorld": MessageLookupByLibrary.simpleMessage("Привет Мир!"),
+        "youReceivedABonusOfNPoints": m0
       };
 }

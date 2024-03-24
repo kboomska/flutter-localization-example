@@ -49,7 +49,8 @@ class HomeScreen extends StatelessWidget {
               style: const TextStyle(fontSize: 32),
             ),
             Text(
-              'Вы получили бонус $_bonus баллов',
+              // 'Вы получили бонус {bonus} баллов'
+              S.of(context).youReceivedABonusOfNPoints(_bonus),
               style: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w700,
