@@ -31,6 +31,8 @@ class HomeScreen extends StatelessWidget {
     super.key,
   });
 
+  final int _bonus = 50;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +47,14 @@ class HomeScreen extends StatelessWidget {
             Text(
               S.of(context).goodbye,
               style: const TextStyle(fontSize: 32),
+            ),
+            Text(
+              'Вы получили бонус $_bonus баллов',
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w700,
+              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
