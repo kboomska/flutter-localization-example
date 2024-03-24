@@ -33,14 +33,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Hello world!',
-              style: TextStyle(fontSize: 32),
+              S.of(context).helloWorld,
+              style: const TextStyle(fontSize: 32),
+            ),
+            Text(
+              S.of(context).goodbye,
+              style: const TextStyle(fontSize: 32),
             ),
           ],
         ),
